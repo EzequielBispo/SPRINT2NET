@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Al8giS86Yo1iS17HyfoGOHYEfXiY1D/mFQI2IkqCewWTAXyXI3kSTfh/HXS1cElwwL16kHLcAPJrL9BvAPRRxg==",
+  "dgSpecHash": "sBodc+O7kmOsJ1VFipIFmuXmzW4J77PJJVUrDM3aFf2JcJt3J3RVEZ512lsk3yTwG1yRiqf0nrOg1RDldgD4Lg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ezequ\\Workspace\\SPRINT2NET\\SPRINT2NET\\SPRINT2NET.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.5\\microsoft.entityframeworkcore.tools.8.0.5.nupkg.sha512",
     "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\ezequ\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
