@@ -2,7 +2,7 @@
 using SPRINT2NET.Models;
 
 
-namespace SPRINT2NET
+namespace SPRINT2NET.Data
 {
     public class AppDbContext : DbContext
     {

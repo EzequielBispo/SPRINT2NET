@@ -2,96 +2,98 @@
 using Microsoft.EntityFrameworkCore;
 using SPRINT2NET.Data;
 using SPRINT2NET.Models;
-using SPRINT2NET;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-[Route("api/[controller]")]
-[ApiController]
-public class UsuariosController : ControllerBase
+namespace SPRINT2NET.Controllers
 {
-    private readonly AppDbContext _context;
-
-    public UsuariosController(AppDbContext context)
+    [Route("api/[controller]")]
+    [ApiController]
+    public class UsuariosController : Controller
     {
-        _context = context;
-    }
+        private readonly AppDbContext _context;
 
-    [HttpGet]
-    public async Task<ActionResult<IEnumerable<Usuario>>> GetClientes()
-    {
-        return await _context.Usuarios.ToListAsync();
-    }
-
-    [HttpGet("{id}")]
-    public async Task<ActionResult<Usuario>> GetUsuario(int id)
-    {
-        var usuario = await _context.Usuarios.FindAsync(id);
-
-        if (usuario == null)
+        public UsuariosController(AppDbContext context)
         {
-            return NotFound();
+            _context = context;
         }
 
-        return usuario;
-    }
-
-    [HttpPost]
-    public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
-    {
-        _context.Usuarios.Add(usuario);
-        await _context.SaveChangesAsync();
-
-        return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
-    }
-
-    [HttpPut("{id}")]
-    public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
-    {
-        if (id != usuario.Id)
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Usuario>>> GetUsuarios()
         {
-            return BadRequest();
+            return await _context.Usuarios.ToListAsync();
         }
 
-        _context.Entry(usuario).State = EntityState.Modified;
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Usuario>> GetUsuario(int id)
+        {
+            var usuario = await _context.Usuarios.FindAsync(id);
 
-        try
-        {
-            await _context.SaveChangesAsync();
-        }
-        catch (DbUpdateConcurrencyException)
-        {
-            if (!UsuarioExists(id))
+            if (usuario == null)
             {
                 return NotFound();
             }
-            else
-            {
-                throw;
-            }
+
+            return usuario;
         }
 
-        return NoContent();
-    }
-
-    [HttpDelete("{id}")]
-    public async Task<IActionResult> DeleteUsuario(int id)
-    {
-        var usuario = await _context.Usuarios.FindAsync(id);
-        if (usuario == null)
+        [HttpPost]
+        public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
-            return NotFound();
+            _context.Usuarios.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction(nameof(GetUsuario), new { id = usuario.Id }, usuario);
         }
 
-        _context.Usuarios.Remove(usuario);
-        await _context.SaveChangesAsync();
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutUsuario(int id, Usuario usuario)
+        {
+            if (id != usuario.Id)
+            {
+                return BadRequest();
+            }
 
-        return NoContent();
-    }
+            _context.Entry(usuario).State = EntityState.Modified;
 
-    private bool UsuarioExists(int id)
-    {
-        return _context.Usuarios.Any(e => e.Id == id);
+            try
+            {
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!UsuarioExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteUsuario(int id)
+        {
+            var usuario = await _context.Usuarios.FindAsync(id);
+            if (usuario == null)
+            {
+                return NotFound();
+            }
+
+            _context.Usuarios.Remove(usuario);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool UsuarioExists(int id)
+        {
+            return _context.Usuarios.Any(e => e.Id == id);
+        }
     }
 }
