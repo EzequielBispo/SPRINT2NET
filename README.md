@@ -39,3 +39,42 @@ No Console do Gerenciador de Pacotes NuGet, execute os seguintes comandos para a
 Add-Migration InitialCreate
 Update-Database
 ```
+
+## EndPoints
+`GET` {/api/Usuarios/id} <br>
+#### Códigos de Status
+
+|código|descrição
+|------|---------
+|200| Listagem de usuários
+|404| Not Found
+---
+
+`POST` {/api/Usuarios/id} <br>
+#### Códigos de Status
+
+|código|descrição
+|------|---------
+|200| Usuário criado
+|500| Falta ou excesso de argumentos
+---
+
+`PUT` {/api/Usuarios/id} <br>
+#### Códigos de Status
+
+|código|descrição
+|------|---------
+|201| Dados atualizados
+|404| Conta não encontrada
+---
+
+`DELETE` {/api/Usuarios/id} <br>
+#### Códigos de Status
+
+|código|descrição
+|------|---------
+|200| Conta deletada com sucesso
+|404| Conta não encontrada
+---
+
+
