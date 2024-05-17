@@ -1,0 +1,9 @@
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.csproj.AssemblyReference.cache
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.AssemblyInfoInputs.cache
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.AssemblyInfo.cs
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.csproj.CoreCompileInputs.cache
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.RazorAssemblyInfo.cache
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.RazorAssemblyInfo.cs
+C:\Users\ezequ\Workspace\SPRINT2NET\SPRINT2NET\obj\Debug\net8.0\SPRINT2NET.sourcelink.json

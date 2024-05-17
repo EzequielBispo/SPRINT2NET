@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
 namespace SPRINT2NET.Models
+{ 
 {
     [Key]
     public int Id { get; set; }
@@ -13,6 +14,6 @@ namespace SPRINT2NET.Models
     [EmailAddress]
     public string Email { get; set; }
 
-    // Outras propriedades...
 }
+
 }
