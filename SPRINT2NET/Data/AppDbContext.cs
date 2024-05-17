@@ -11,7 +11,5 @@ namespace SPRINT2NET.Data
         }
 
         public DbSet<Usuario> Usuarios { get; set; }
-
-
     }
 }

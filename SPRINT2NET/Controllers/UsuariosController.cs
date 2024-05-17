@@ -10,7 +10,7 @@ namespace SPRINT2NET.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsuariosController : Controller
+    public class UsuariosController : ControllerBase
     {
         private readonly AppDbContext _context;
 
@@ -37,6 +37,7 @@ namespace SPRINT2NET.Controllers
 
             return usuario;
         }
+
 
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
